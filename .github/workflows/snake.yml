@@ -2,8 +2,11 @@ name: Generate Snake
 
 on:
   schedule:
-    - cron: "0 0 * * *"  # runs once a day at midnight
-  workflow_dispatch:      # allows manual runs from the Actions tab
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write  # Ensures we can push files back to the repo
 
 jobs:
   build:
@@ -15,10 +18,10 @@ jobs:
       - name: Generate Snake
         uses: Platane/snk@v2
         with:
-          # Replace 'anmolp1' with your exact GitHub username, if different
-          github_user_name: anmolp1  
+          # Replace 'anmolp1' with your exact GitHub username if needed
+          github_user_name: anmolp1
         env:
-          # Required to allow the action to fetch your contributions
+          # Provided automatically by GitHub, no need to set a custom secret
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Copy the generated SVG
