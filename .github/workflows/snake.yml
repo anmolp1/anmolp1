@@ -2,11 +2,11 @@ name: Generate Snake
 
 on:
   schedule:
-    - cron: '0 0 * * *'
-  workflow_dispatch:
+    - cron: '0 0 * * *'      # Runs once a day
+  workflow_dispatch:          # Allows manual trigger in the Actions tab
 
 permissions:
-  contents: write  # Ensures we can push files back to the repo
+  contents: write             # Required so we can commit the generated files back
 
 jobs:
   build:
@@ -15,24 +15,31 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v3
 
-      - name: Generate Snake
-        uses: Platane/snk@v2
+      - name: generate-snake-game-from-github-contribution-grid
+        uses: Platane/snk@v3.3.0
         with:
-          # Replace 'anmolp1' with your exact GitHub username if needed
+          # Use your GitHub username (case-insensitive) here:
           github_user_name: anmolp1
-        env:
-          # Provided automatically by GitHub, no need to set a custom secret
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Optional: if the default actions token doesn't work, uncomment:
+          # github_token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Copy the generated SVG
+          # 'outputs' is where you list each file you want generated (one per line).
+          # Query params let you customize colors, theme, etc.
+          outputs: |
+            dark.svg?palette=github-dark&color_snake=blue
+            light.svg?color_snake=#7845ab
+            ocean.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9
+
+      - name: Move generated files to dist folder
         run: |
           mkdir -p dist
-          cp snk/svg/* dist/
+          mv *.svg dist/ || true
+          mv *.gif dist/ || true
 
-      - name: Commit updated snake to the repo
+      - name: Commit updated snake files
         uses: EndBug/add-and-commit@v9
         with:
-          add: "dist/*.svg"
-          message: "Update snake.svg"
+          add: "dist/*"
+          message: "Update snake files"
           author_name: "GitHub Actions"
           author_email: "github-actions@github.com"
