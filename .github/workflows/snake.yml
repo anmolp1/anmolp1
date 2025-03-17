@@ -1,39 +1,34 @@
 name: Generate Snake
+
+# Runs daily and also manually
 on:
   schedule:
-    - cron: "0 0 * * *"  # runs once a day
+    - cron: "0 0 * * *"
   workflow_dispatch:
 
 jobs:
-  generate:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - name: Check out code
+        uses: actions/checkout@v3
+
       - name: Generate Snake
         uses: Platane/snk@v2
         with:
+          # Use your GitHub username here
           github_user_name: anmolp1
-          outputs: dist/snake.svg
-      - name: Upload artifact
-        uses: actions/upload-artifact@v3
-        with:
-          name: snake
-          path: dist/snake.svg
 
-  deploy:
-    needs: generate
-    runs-on: ubuntu-latest
-    steps:
-      - name: Download artifact
-        uses: actions/download-artifact@v3
+          # Where to put the generated files
+          output_path: dist
+
+          # We specifically want a snake.svg
+          output_snake: snake.svg
+
+      - name: Commit changes
+        uses: EndBug/add-and-commit@v9
         with:
-          name: snake
-      - name: Push Snake to the repo
-        uses: ad-m/github-push-action@v0.6.0
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: master
-          force: true
-          directory: "."
-          commit_message: "Add updated snake"
-          # If your default branch is "main" instead, adjust branch name accordingly
+          add: "dist/snake.svg"
+          message: "Update snake.svg"
+          author_name: GitHub Actions
+          author_email: github-actions@github.com
