@@ -1,10 +1,9 @@
 name: Generate Snake
 
-# Runs daily and also manually
 on:
   schedule:
-    - cron: "0 0 * * *"
-  workflow_dispatch:
+    - cron: "0 0 * * *"  # runs once a day at midnight
+  workflow_dispatch:      # allows manual runs from the Actions tab
 
 jobs:
   build:
@@ -16,19 +15,21 @@ jobs:
       - name: Generate Snake
         uses: Platane/snk@v2
         with:
-          # Use your GitHub username here
-          github_user_name: anmolp1
+          # Replace 'anmolp1' with your exact GitHub username, if different
+          github_user_name: anmolp1  
+        env:
+          # Required to allow the action to fetch your contributions
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-          # Where to put the generated files
-          output_path: dist
+      - name: Copy the generated SVG
+        run: |
+          mkdir -p dist
+          cp snk/svg/* dist/
 
-          # We specifically want a snake.svg
-          output_snake: snake.svg
-
-      - name: Commit changes
+      - name: Commit updated snake to the repo
         uses: EndBug/add-and-commit@v9
         with:
-          add: "dist/snake.svg"
+          add: "dist/*.svg"
           message: "Update snake.svg"
-          author_name: GitHub Actions
-          author_email: github-actions@github.com
+          author_name: "GitHub Actions"
+          author_email: "github-actions@github.com"
