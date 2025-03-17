@@ -17,7 +17,7 @@
   <img src="https://komarev.com/ghpvc/?username=anmolp1&label=Views+so+far&color=brightgreen&style=flat-square" alt="Profile Views" />
   
   <!-- Trophies (use lowercase username if needed) -->
-  <img src="https://github-profile-trophy.vercel.app/?username=anmolp1&row=1&theme=radical" alt="Trophies" />
+  <img src="https://github-profile-trophy.vercel.app/?username=anmolp1&row=1&theme=radical&count_private=true" alt="Trophies" />
 </p>
 
 ---
@@ -96,13 +96,13 @@
 <h2 align="center"> 🚀 GitHub Stats & Activity </h2>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=anmolp1&show_icons=true&theme=tokyonight&hide_border=true" alt="Anmol's GitHub Stats" height="165" />
+  <img src="https://github-readme-stats.vercel.app/api?username=anmolp1&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="Anmol's GitHub Stats" height="165" />
   &nbsp;
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=anmolp1&theme=tokyonight&hide_border=true" alt="Anmol's GitHub Streak" height="165" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=anmolp1&theme=tokyonight&hide_border=true&count_private=true" alt="Anmol's GitHub Streak" height="165" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=anmolp1&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" height="135" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=anmolp1&layout=compact&theme=tokyonight&hide_border=true&count_private=true" alt="Top Languages" height="135" />
 </p>
 
 ---
