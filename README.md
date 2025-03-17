@@ -39,7 +39,16 @@
   <!-- <img src="https://github-readme-activity-graph.cyclic.app/graph?username=anmolp1&theme=react-dark&bg_color=20232a&hide_border=true" width="100%" alt="Activity Graph" /> -->
 </p>
 
-![GitHub Contribution Snake](dist/snake.svg)
+## My Animated Snake Contributions
+
+**Dark Theme Snake**  
+![Dark Snake](https://github.com/anmolp1/anmolp1/blob/main/dist/dark.svg)
+
+**Light Theme Snake**  
+![Light Snake](https://github.com/anmolp1/anmolp1/blob/main/dist/light.svg)
+
+**Ocean Snake GIF**  
+![Ocean Snake](https://github.com/anmolp1/anmolp1/blob/main/dist/ocean.gif)
 
 > **Fun Fact:** The best code is written after midnight (don’t quote me on that! ☕)
 
