@@ -39,6 +39,8 @@
   <!-- <img src="https://github-readme-activity-graph.cyclic.app/graph?username=anmolp1&theme=react-dark&bg_color=20232a&hide_border=true" width="100%" alt="Activity Graph" /> -->
 </p>
 
+![GitHub Contribution Snake](https://github.com/anmolp1/anmolp1/blob/output/snake.svg)
+
 > **Fun Fact:** The best code is written after midnight (don’t quote me on that! ☕)
 
 ---
