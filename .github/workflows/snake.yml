@@ -2,7 +2,7 @@ name: Generate Snake
 
 on:
   schedule:
-    - cron: '0 0 * * *'      # Runs once a day
+    - cron: '*/15 * * * *'      # Runs every 15 mins
   workflow_dispatch:          # Allows manual trigger in the Actions tab
 
 permissions:
@@ -27,8 +27,6 @@ jobs:
           # Query params let you customize colors, theme, etc.
           outputs: |
             dark.svg?palette=github-dark&color_snake=blue
-            light.svg?color_snake=#7845ab
-            ocean.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9
 
       - name: Move generated files to dist folder
         run: |
