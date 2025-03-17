@@ -1,0 +1,39 @@
+name: Generate Snake
+on:
+  schedule:
+    - cron: "0 0 * * *"  # runs once a day
+  workflow_dispatch:
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Generate Snake
+        uses: Platane/snk@v2
+        with:
+          github_user_name: anmolp1
+          outputs: dist/snake.svg
+      - name: Upload artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: snake
+          path: dist/snake.svg
+
+  deploy:
+    needs: generate
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: snake
+      - name: Push Snake to the repo
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: master
+          force: true
+          directory: "."
+          commit_message: "Add updated snake"
+          # If your default branch is "main" instead, adjust branch name accordingly
