@@ -40,15 +40,8 @@
 </p>
 
 ## My Animated Snake Contributions
-
-**Dark Theme Snake**  
+ 
 ![Dark Snake](https://github.com/anmolp1/anmolp1/blob/main/dist/dark.svg)
-
-**Light Theme Snake**  
-![Light Snake](https://github.com/anmolp1/anmolp1/blob/main/dist/light.svg)
-
-**Ocean Snake GIF**  
-![Ocean Snake](https://github.com/anmolp1/anmolp1/blob/main/dist/ocean.gif)
 
 > **Fun Fact:** The best code is written after midnight (don’t quote me on that! ☕)
 
