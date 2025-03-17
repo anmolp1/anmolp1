@@ -30,8 +30,13 @@
 - 👯 **Collaboration:** Looking for AI-enabled ideas to build upon  
 - 📫 **Contact Me:** er.anmolp+github@gmail.com
 
+<!-- Activity Graph -->
 <p align="center">
-  <img src="https://github-readme-activity-graph.cyclic.app/graph?username=anmolp1&theme=react-dark&bg_color=20232a&hide_border=true" width="100%" alt="Activity Graph" />
+  <!-- Try vercel endpoint -->
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=anmolp1&theme=react-dark&bg_color=20232a&hide_border=true" width="100%" alt="Activity Graph" />
+
+  <!-- If the above link is down, comment it out and remove this next line. -->
+  <!-- <img src="https://github-readme-activity-graph.cyclic.app/graph?username=anmolp1&theme=react-dark&bg_color=20232a&hide_border=true" width="100%" alt="Activity Graph" /> -->
 </p>
 
 > **Fun Fact:** The best code is written after midnight (don’t quote me on that! ☕)
