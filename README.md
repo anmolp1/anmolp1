@@ -65,6 +65,7 @@
 
 <p align="center">
   <!-- Frontend -->
+  <img src="https://img.shields.io/badge/Svelte-white?style=for-the-badge&logo=svelte" alt="Svelte" />
   <img src="https://img.shields.io/badge/HTML5-E34F26.svg?style=flat-square&logo=html5&logoColor=white" alt="HTML5" />
   <img src="https://img.shields.io/badge/CSS3-1572B6.svg?style=flat-square&logo=css3&logoColor=white" alt="CSS3" />
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript" />
@@ -83,6 +84,8 @@
 
 <p align="center">
   <!-- Databases & Tools -->
+  <img src="https://shields.io/badge/supabase-white?logo=supabase&style=for-the-badge" alt="Supabase" />
+  <img src="https://img.shields.io/badge/-Clerk-6C47FF?style=flat&logo=clerk&logoColor=white" alt="Clerk" />
   <img src="https://img.shields.io/badge/MySQL-005C84.svg?style=flat-square&logo=mysql&logoColor=white" alt="MySQL" />
   <img src="https://img.shields.io/badge/PostgreSQL-316192.svg?style=flat-square&logo=postgresql&logoColor=white" alt="Postgres" />
   <img src="https://img.shields.io/badge/Git-F05033.svg?style=flat-square&logo=git&logoColor=white" alt="Git" />
