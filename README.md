@@ -7,7 +7,7 @@
 <!-- Typing SVG -->
 <p align="center">
   <a href="https://github.com/anmolp1">
-    <img src="https://readme-typing-svg.herokuapp.com?size=22&duration=4000&color=FFD700&center=true&vCenter=true&multiline=true&lines=Product+Enthusiast%2C+AI+Explorer+%F0%9F%A4%96;Always+Learning%2C+Building%2C+and+Growing%21;Open+to+Collaborations+%F0%9F%9A%80" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.herokuapp.com?size=22&duration=4000&color=FFD700&center=true&vCenter=true&multiline=true&width=700&height=150&lines=Product+Enthusiast%2C+AI+Explorer+%F0%9F%A4%96;Always+Learning%2C+Building%2C+and+Growing%21;Open+to+Collaborations+%F0%9F%9A%80" alt="Typing SVG" />
   </a>
 </p>
 
@@ -28,7 +28,7 @@
 - ✨ **Name:** Anmol Parimoo  
 - 👀 **Interests:** Data Science & Analytics, AI & ML, Data Visualization  
 - 👯 **Collaboration:** Looking for AI-enabled ideas to build upon  
-- 📫 **Contact Me:** er.anmolp+github@gmail.com
+- 📫 **Contact Me:** anmol@mldeep.io
 
 <!-- Activity Graph -->
 <p align="center">
