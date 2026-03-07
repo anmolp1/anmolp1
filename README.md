@@ -39,6 +39,14 @@
   <!-- <img src="https://github-readme-activity-graph.cyclic.app/graph?username=anmolp1&theme=react-dark&bg_color=20232a&hide_border=true" width="100%" alt="Activity Graph" /> -->
 </p>
 
+## Lines of Code by Language
+
+<p align="center">
+  <img src="https://github.com/anmolp1/anmolp1/blob/main/dist/lang-chart.svg" alt="Lines of Code by Language" />
+</p>
+
+---
+
 ## My Animated Snake Contributions
  
 ![Dark Snake](https://github.com/anmolp1/anmolp1/blob/main/dist/dark.svg)

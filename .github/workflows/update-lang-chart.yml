@@ -1,0 +1,32 @@
+name: Update Language Chart
+
+on:
+  schedule:
+    - cron: "0 0 * * 0" # Every Sunday at midnight UTC
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  update-chart:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Generate language chart
+        env:
+          GH_TOKEN: ${{ secrets.PAT_TOKEN || secrets.GITHUB_TOKEN }}
+        run: python scripts/generate_lang_chart.py
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dist/lang-chart.svg
+          git diff --staged --quiet || git commit -m "Update language chart"
+          git push
