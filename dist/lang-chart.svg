@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="650" height="620" viewBox="0 0 650 620">
-  <rect width="650" height="620" rx="12" fill="#0d1117" />
-  <rect x="1" y="1" width="648" height="618" rx="11" fill="none" stroke="#30363d" stroke-width="1" />
+<svg xmlns="http://www.w3.org/2000/svg" width="650" height="368" viewBox="0 0 650 368">
+  <rect width="650" height="368" rx="12" fill="#0d1117" />
+  <rect x="1" y="1" width="648" height="366" rx="11" fill="none" stroke="#30363d" stroke-width="1" />
   <text x="325.0" y="34" fill="#e6edf3" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="14" font-weight="600" text-anchor="middle">Lines of Code by Language</text>
   <text x="160" y="79.0" fill="#e6edf3" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" text-anchor="end">Jupyter Notebook</text>
   <rect x="170" y="60" width="400" height="28" rx="6" fill="#161b22" />
@@ -10,86 +10,44 @@
   <text x="580" y="79.0" fill="#8b949e" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11">105.3K</text>
   <text x="160" y="115.0" fill="#e6edf3" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" text-anchor="end">TypeScript</text>
   <rect x="170" y="96" width="400" height="28" rx="6" fill="#161b22" />
-  <rect x="170" y="96" width="284.5" height="28" rx="6" fill="#3178c6" opacity="0.85">
-    <animate attributeName="width" from="0" to="284.5" dur="0.6s" fill="freeze" begin="0.05s" />
+  <rect x="170" y="96" width="98.2" height="28" rx="6" fill="#3178c6" opacity="0.85">
+    <animate attributeName="width" from="0" to="98.2" dur="0.6s" fill="freeze" begin="0.05s" />
   </rect>
-  <text x="580" y="115.0" fill="#8b949e" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11">74.9K</text>
-  <text x="160" y="151.0" fill="#e6edf3" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" text-anchor="end">HTML</text>
+  <text x="580" y="115.0" fill="#8b949e" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11">25.9K</text>
+  <text x="160" y="151.0" fill="#e6edf3" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" text-anchor="end">Python</text>
   <rect x="170" y="132" width="400" height="28" rx="6" fill="#161b22" />
-  <rect x="170" y="132" width="140.6" height="28" rx="6" fill="#e34c26" opacity="0.85">
-    <animate attributeName="width" from="0" to="140.6" dur="0.6s" fill="freeze" begin="0.10s" />
+  <rect x="170" y="132" width="33.9" height="28" rx="6" fill="#3572A5" opacity="0.85">
+    <animate attributeName="width" from="0" to="33.9" dur="0.6s" fill="freeze" begin="0.10s" />
   </rect>
-  <text x="580" y="151.0" fill="#8b949e" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11">37.0K</text>
-  <text x="160" y="187.0" fill="#e6edf3" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" text-anchor="end">Python</text>
+  <text x="580" y="151.0" fill="#8b949e" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11">8.9K</text>
+  <text x="160" y="187.0" fill="#e6edf3" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" text-anchor="end">CSS</text>
   <rect x="170" y="168" width="400" height="28" rx="6" fill="#161b22" />
-  <rect x="170" y="168" width="136.5" height="28" rx="6" fill="#3572A5" opacity="0.85">
-    <animate attributeName="width" from="0" to="136.5" dur="0.6s" fill="freeze" begin="0.15s" />
+  <rect x="170" y="168" width="2.0" height="28" rx="6" fill="#563d7c" opacity="0.85">
+    <animate attributeName="width" from="0" to="2.0" dur="0.6s" fill="freeze" begin="0.15s" />
   </rect>
-  <text x="580" y="187.0" fill="#8b949e" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11">35.9K</text>
-  <text x="160" y="223.0" fill="#e6edf3" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" text-anchor="end">Svelte</text>
+  <text x="580" y="187.0" fill="#8b949e" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11">448</text>
+  <text x="160" y="223.0" fill="#e6edf3" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" text-anchor="end">Shell</text>
   <rect x="170" y="204" width="400" height="28" rx="6" fill="#161b22" />
-  <rect x="170" y="204" width="30.0" height="28" rx="6" fill="#ff3e00" opacity="0.85">
-    <animate attributeName="width" from="0" to="30.0" dur="0.6s" fill="freeze" begin="0.20s" />
+  <rect x="170" y="204" width="2.0" height="28" rx="6" fill="#89e051" opacity="0.85">
+    <animate attributeName="width" from="0" to="2.0" dur="0.6s" fill="freeze" begin="0.20s" />
   </rect>
-  <text x="580" y="223.0" fill="#8b949e" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11">7.9K</text>
-  <text x="160" y="259.0" fill="#e6edf3" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" text-anchor="end">Shell</text>
+  <text x="580" y="223.0" fill="#8b949e" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11">217</text>
+  <text x="160" y="259.0" fill="#e6edf3" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" text-anchor="end">PowerShell</text>
   <rect x="170" y="240" width="400" height="28" rx="6" fill="#161b22" />
-  <rect x="170" y="240" width="28.7" height="28" rx="6" fill="#89e051" opacity="0.85">
-    <animate attributeName="width" from="0" to="28.7" dur="0.6s" fill="freeze" begin="0.25s" />
+  <rect x="170" y="240" width="2.0" height="28" rx="6" fill="#012456" opacity="0.85">
+    <animate attributeName="width" from="0" to="2.0" dur="0.6s" fill="freeze" begin="0.25s" />
   </rect>
-  <text x="580" y="259.0" fill="#8b949e" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11">7.6K</text>
-  <text x="160" y="295.0" fill="#e6edf3" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" text-anchor="end">JavaScript</text>
+  <text x="580" y="259.0" fill="#8b949e" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11">176</text>
+  <text x="160" y="295.0" fill="#e6edf3" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" text-anchor="end">HTML</text>
   <rect x="170" y="276" width="400" height="28" rx="6" fill="#161b22" />
-  <rect x="170" y="276" width="20.6" height="28" rx="6" fill="#f1e05a" opacity="0.85">
-    <animate attributeName="width" from="0" to="20.6" dur="0.6s" fill="freeze" begin="0.30s" />
+  <rect x="170" y="276" width="2.0" height="28" rx="6" fill="#e34c26" opacity="0.85">
+    <animate attributeName="width" from="0" to="2.0" dur="0.6s" fill="freeze" begin="0.30s" />
   </rect>
-  <text x="580" y="295.0" fill="#8b949e" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11">5.4K</text>
-  <text x="160" y="331.0" fill="#e6edf3" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" text-anchor="end">CSS</text>
+  <text x="580" y="295.0" fill="#8b949e" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11">157</text>
+  <text x="160" y="331.0" fill="#e6edf3" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" text-anchor="end">JavaScript</text>
   <rect x="170" y="312" width="400" height="28" rx="6" fill="#161b22" />
-  <rect x="170" y="312" width="13.4" height="28" rx="6" fill="#563d7c" opacity="0.85">
-    <animate attributeName="width" from="0" to="13.4" dur="0.6s" fill="freeze" begin="0.35s" />
+  <rect x="170" y="312" width="2.0" height="28" rx="6" fill="#f1e05a" opacity="0.85">
+    <animate attributeName="width" from="0" to="2.0" dur="0.6s" fill="freeze" begin="0.35s" />
   </rect>
-  <text x="580" y="331.0" fill="#8b949e" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11">3.5K</text>
-  <text x="160" y="367.0" fill="#e6edf3" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" text-anchor="end">PLpgSQL</text>
-  <rect x="170" y="348" width="400" height="28" rx="6" fill="#161b22" />
-  <rect x="170" y="348" width="8.7" height="28" rx="6" fill="#8b8b8b" opacity="0.85">
-    <animate attributeName="width" from="0" to="8.7" dur="0.6s" fill="freeze" begin="0.40s" />
-  </rect>
-  <text x="580" y="367.0" fill="#8b949e" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11">2.3K</text>
-  <text x="160" y="403.0" fill="#e6edf3" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" text-anchor="end">Dockerfile</text>
-  <rect x="170" y="384" width="400" height="28" rx="6" fill="#161b22" />
-  <rect x="170" y="384" width="2.0" height="28" rx="6" fill="#384d54" opacity="0.85">
-    <animate attributeName="width" from="0" to="2.0" dur="0.6s" fill="freeze" begin="0.45s" />
-  </rect>
-  <text x="580" y="403.0" fill="#8b949e" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11">341</text>
-  <text x="160" y="439.0" fill="#e6edf3" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" text-anchor="end">PowerShell</text>
-  <rect x="170" y="420" width="400" height="28" rx="6" fill="#161b22" />
-  <rect x="170" y="420" width="2.0" height="28" rx="6" fill="#012456" opacity="0.85">
-    <animate attributeName="width" from="0" to="2.0" dur="0.6s" fill="freeze" begin="0.50s" />
-  </rect>
-  <text x="580" y="439.0" fill="#8b949e" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11">176</text>
-  <text x="160" y="475.0" fill="#e6edf3" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" text-anchor="end">Swift</text>
-  <rect x="170" y="456" width="400" height="28" rx="6" fill="#161b22" />
-  <rect x="170" y="456" width="2.0" height="28" rx="6" fill="#F05138" opacity="0.85">
-    <animate attributeName="width" from="0" to="2.0" dur="0.6s" fill="freeze" begin="0.55s" />
-  </rect>
-  <text x="580" y="475.0" fill="#8b949e" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11">108</text>
-  <text x="160" y="511.0" fill="#e6edf3" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" text-anchor="end">SCSS</text>
-  <rect x="170" y="492" width="400" height="28" rx="6" fill="#161b22" />
-  <rect x="170" y="492" width="2.0" height="28" rx="6" fill="#c6538c" opacity="0.85">
-    <animate attributeName="width" from="0" to="2.0" dur="0.6s" fill="freeze" begin="0.60s" />
-  </rect>
-  <text x="580" y="511.0" fill="#8b949e" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11">99</text>
-  <text x="160" y="547.0" fill="#e6edf3" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" text-anchor="end">Makefile</text>
-  <rect x="170" y="528" width="400" height="28" rx="6" fill="#161b22" />
-  <rect x="170" y="528" width="2.0" height="28" rx="6" fill="#427819" opacity="0.85">
-    <animate attributeName="width" from="0" to="2.0" dur="0.6s" fill="freeze" begin="0.65s" />
-  </rect>
-  <text x="580" y="547.0" fill="#8b949e" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11">53</text>
-  <text x="160" y="583.0" fill="#e6edf3" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" text-anchor="end">Ruby</text>
-  <rect x="170" y="564" width="400" height="28" rx="6" fill="#161b22" />
-  <rect x="170" y="564" width="2.0" height="28" rx="6" fill="#701516" opacity="0.85">
-    <animate attributeName="width" from="0" to="2.0" dur="0.6s" fill="freeze" begin="0.70s" />
-  </rect>
-  <text x="580" y="583.0" fill="#8b949e" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11">51</text>
+  <text x="580" y="331.0" fill="#8b949e" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11">141</text>
 </svg>
