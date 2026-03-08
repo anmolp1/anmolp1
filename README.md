@@ -1,132 +1,155 @@
-<!-- Banner -->
 <p align="center">
-  <!-- A wave-shaped banner with a fun gradient & twinkling animation -->
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=230&section=header&text=Hey%20There%2C%20I'm%20Anmol!%20👋&fontSize=35&fontAlignY=40&animation=twinkling&fontColor=ffffff"/>
-</p>
-
-<!-- Typing SVG -->
-<p align="center">
-  <a href="https://github.com/anmolp1">
-    <img src="https://readme-typing-svg.herokuapp.com?size=22&duration=4000&color=FFD700&center=true&vCenter=true&multiline=true&width=700&height=150&lines=Product+Enthusiast%2C+AI+Explorer+%F0%9F%A4%96;Always+Learning%2C+Building%2C+and+Growing%21;Open+to+Collaborations+%F0%9F%9A%80" alt="Typing SVG" />
-  </a>
-</p>
-
-<!-- Visitor Count + Trophies -->
-<p align="center">
-  <!-- Funky style for visitor badge -->
-  <img src="https://komarev.com/ghpvc/?username=anmolp1&label=Views+so+far&color=brightgreen&style=flat-square" alt="Profile Views" />
-  
-  <!-- Trophies (use lowercase username if needed) -->
-  <img src="https://github-profile-trophy.vercel.app/?username=anmolp1&row=1&theme=radical&count_private=true" alt="Trophies" />
+  <img src="https://github.com/anmolp1/anmolp1/blob/main/dist/terminal-header.svg" alt="anmol@mldeep terminal" width="800" />
 </p>
 
 ---
 
-<!-- About Me -->
-<h2 align="center"> 👨‍💻 About Me </h2>
+<img src="https://github.com/anmolp1/anmolp1/blob/main/dist/prompt-whoami.svg" alt="$ whoami" />
 
-- ✨ **Name:** Anmol Parimoo  
-- 👀 **Interests:** Data Science & Analytics, AI & ML, Data Visualization  
-- 👯 **Collaboration:** Looking for AI-enabled ideas to build upon  
-- 📫 **Contact Me:** anmol@mldeep.io
+```yaml
+name:     Anmol Parimoo
+role:     Founder & Principal Engineer
+company:  MLDeep Systems
+focus:    AI Agent Reliability Engineering
+website:  mldeep.io
+email:    anmol@mldeep.io
+```
 
-<!-- Activity Graph -->
+---
+
+<img src="https://github.com/anmolp1/anmolp1/blob/main/dist/prompt-cat-mission.svg" alt="$ cat mission.txt" />
+
+> I build systems that diagnose why AI agents break in production.
+> Most agents work in demos. Few survive production traffic, edge cases,
+> and the slow drift that turns a 94% accuracy system into a 71% one
+> while nobody notices. That's the problem I solve.
+
+---
+
+<img src="https://github.com/anmolp1/anmolp1/blob/main/dist/prompt-ls-projects.svg" alt="$ ls -la projects/" />
+
+### `>_ agent-doctor`
+
+AI agent reliability diagnostics -- the core MLDeep offering.
+
+Diagnoses why AI agents degrade in production. Built on a taxonomy of
+7 repeating failure modes that account for most agent breakdowns:
+
+```
+MODE 01  Context Window Overflow       MODE 05  Feedback Loop Collapse
+MODE 02  Tool Selection Drift          MODE 06  Guardrail Brittleness
+MODE 03  Planning Horizon Decay        MODE 07  State Management Corruption
+MODE 04  Retrieval Quality Erosion
+```
+
+`STATUS: active development` | [`mldeep.io`](https://mldeep.io)
+
+---
+
+### `>_ claude-skills`
+
+14 production Claude Code skills for B2B consulting workflows.
+
+```
+skills/
+├── consultative-selling/     # sales call prep & objection handling
+├── gtm-plan-generator/       # 90-day go-to-market plans
+├── icp-firmographics/        # ideal customer profiling
+├── proposal-writer/          # engagement proposals (.docx)
+├── partner-playbook/         # partnership strategy & co-sell
+├── engagement-manager/       # status reports & scope tracking
+├── pricing-strategist/       # value-based pricing models
+├── cash-flow-planner/        # forecasts & invoice optimization
+├── talent-planner/           # hiring & capacity planning
+├── service-productizer/      # package repeatable offerings
+├── thought-leadership/       # linkedin, case studies, talks
+├── reel-maker/               # youtube shorts & reels (mp4)
+├── ui-ux-pro-max/            # design systems & components
+└── frontend-design/          # production-grade interfaces
+```
+
+Built for real consulting engagements. Not toy demos.
+
+`STATUS: production`
+
+---
+
+<img src="https://github.com/anmolp1/anmolp1/blob/main/dist/prompt-cat-stack.svg" alt="$ cat /etc/stack.conf" />
+
+```ini
+[languages]
+primary   = python, typescript, javascript
+secondary = sql, bash, html/css
+
+[ai_ml]
+llm_apis   = claude, gemini
+frameworks = tensorflow, pytorch, scikit-learn
+vector_db  = faiss, chroma
+tts        = kokoro
+
+[frontend]
+frameworks = react 19, sveltekit
+styling    = tailwind css
+animation  = gsap, three.js
+
+[backend]
+api     = fastapi, flask, express
+runtime = node.js
+
+[data]
+warehouse = bigquery
+transform = dbt
+graph     = neo4j
+cache     = redis
+streaming = kafka
+analysis  = pandas
+
+[infra]
+cloud      = gcp (cloud run)
+containers = docker
+ci_cd      = github actions
+monitoring = prometheus, grafana
+
+[tools]
+media      = ffmpeg, pillow
+automation = playwright
+```
+
+---
+
+<img src="https://github.com/anmolp1/anmolp1/blob/main/dist/prompt-wc.svg" alt="$ wc -l" />
+
 <p align="center">
-  <!-- Try vercel endpoint -->
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=anmolp1&theme=react-dark&bg_color=20232a&hide_border=true" width="100%" alt="Activity Graph" />
-
-  <!-- If the above link is down, comment it out and remove this next line. -->
-  <!-- <img src="https://github-readme-activity-graph.cyclic.app/graph?username=anmolp1&theme=react-dark&bg_color=20232a&hide_border=true" width="100%" alt="Activity Graph" /> -->
-</p>
-
-## Lines of Code by Language
-
-<p align="center">
-  <img src="https://github.com/anmolp1/anmolp1/blob/main/dist/lang-chart.svg" alt="Lines of Code by Language" />
+  <img src="https://github.com/anmolp1/anmolp1/blob/main/dist/lang-chart.svg" alt="lines of code by language" />
 </p>
 
 ---
 
-## My Animated Snake Contributions
- 
-![Dark Snake](https://github.com/anmolp1/anmolp1/blob/main/dist/dark.svg)
+<img src="https://github.com/anmolp1/anmolp1/blob/main/dist/prompt-git-snake.svg" alt="$ git log --graph | snake" />
 
-> **Fun Fact:** The best code is written after midnight (don’t quote me on that! ☕)
-
----
-
-<!-- Connect -->
-<h2 align="center"> 🔗 Connect with Me </h2>
-<p align="center">
-  <a href="https://www.linkedin.com/in/anmol01" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn">
-  </a>
-  <a href="https://instagram.com/_musafirhoonyaaron" target="_blank">
-    <img src="https://img.shields.io/badge/Instagram-%23E4405F.svg?style=flat-square&logo=instagram&logoColor=white" alt="Instagram">
-  </a>
-</p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/anmolp1/anmolp1/blob/main/dist/dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://github.com/anmolp1/anmolp1/blob/main/dist/dark.svg" />
+  <img alt="contribution snake" src="https://github.com/anmolp1/anmolp1/blob/main/dist/dark.svg" />
+</picture>
 
 ---
 
-<!-- Tech Stack -->
-<h2 align="center"> ⚙️ My Tech Stack </h2>
+<img src="https://github.com/anmolp1/anmolp1/blob/main/dist/prompt-ssh-config.svg" alt="$ cat ~/.ssh/config" />
 
-<p align="center">
-  <!-- Frontend -->
-  <img src="https://img.shields.io/badge/Svelte-white?style=for-the-badge&logo=svelte" alt="Svelte" />
-  <img src="https://img.shields.io/badge/HTML5-E34F26.svg?style=flat-square&logo=html5&logoColor=white" alt="HTML5" />
-  <img src="https://img.shields.io/badge/CSS3-1572B6.svg?style=flat-square&logo=css3&logoColor=white" alt="CSS3" />
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript" />
-  <img src="https://img.shields.io/badge/React-61DAFB.svg?style=flat-square&logo=react&logoColor=black" alt="React" />
-  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC.svg?style=flat-square&logo=tailwind-css&logoColor=white" alt="TailwindCSS" />
-</p>
-
-<p align="center">
-  <!-- AI / ML -->
-  <img src="https://img.shields.io/badge/Python-3776AB.svg?style=flat-square&logo=python&logoColor=white" alt="Python" />
-  <img src="https://img.shields.io/badge/TensorFlow-FF6F00.svg?style=flat-square&logo=tensorflow&logoColor=white" alt="TensorFlow" />
-  <img src="https://img.shields.io/badge/PyTorch-EE4C2C.svg?style=flat-square&logo=pytorch&logoColor=white" alt="PyTorch" />
-  <img src="https://img.shields.io/badge/Scikit--Learn-F7931E.svg?style=flat-square&logo=scikit-learn&logoColor=white" alt="Scikit-Learn" />
-  <img src="https://img.shields.io/badge/Pandas-150458.svg?style=flat-square&logo=pandas&logoColor=white" alt="Pandas" />
-</p>
-
-<p align="center">
-  <!-- Databases & Tools -->
-  <img src="https://shields.io/badge/supabase-white?logo=supabase&style=for-the-badge" alt="Supabase" />
-  <img src="https://img.shields.io/badge/-Clerk-6C47FF?style=flat&logo=clerk&logoColor=white" alt="Clerk" />
-  <img src="https://img.shields.io/badge/MySQL-005C84.svg?style=flat-square&logo=mysql&logoColor=white" alt="MySQL" />
-  <img src="https://img.shields.io/badge/PostgreSQL-316192.svg?style=flat-square&logo=postgresql&logoColor=white" alt="Postgres" />
-  <img src="https://img.shields.io/badge/Git-F05033.svg?style=flat-square&logo=git&logoColor=white" alt="Git" />
-  <img src="https://img.shields.io/badge/Linux-FCC624.svg?style=flat-square&logo=linux&logoColor=black" alt="Linux" />
-  <img src="https://img.shields.io/badge/GoogleCloud-4285F4.svg?style=flat-square&logo=google-cloud&logoColor=white" alt="GCP" />
-</p>
+```
+Host            mldeep.io
+  Website       https://mldeep.io
+  Email         anmol@mldeep.io
+  LinkedIn      linkedin.com/in/anmol01
+  GitHub        github.com/anmolp1
+```
 
 ---
 
-<!-- Stats -->
-<h2 align="center"> 🚀 GitHub Stats & Activity </h2>
+<img src="https://github.com/anmolp1/anmolp1/blob/main/dist/prompt-exit.svg" alt="$ exit" />
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=anmolp1&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="Anmol's GitHub Stats" height="165" />
-  &nbsp;
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=anmolp1&theme=tokyonight&hide_border=true&count_private=true" alt="Anmol's GitHub Streak" height="165" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=anmolp1&layout=compact&theme=tokyonight&hide_border=true&count_private=true" alt="Top Languages" height="135" />
-</p>
-
----
-
-<!-- Footer / Quote -->
-<p align="center">
-  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark" alt="Random Quote" />
-</p>
-
-<p align="center">
-  <i>"Code is like humor. When you have to explain it, it’s bad."</i>
-</p>
-
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=110&section=footer"/>
-</p>
+```
+logout
+Connection to mldeep.io closed.
+```

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="344" height="32" viewBox="0 0 344 32">
+  <defs>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="0.8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="344" height="32" rx="4" fill="#0a0a0a"/>
+  <g filter="url(#glow)">
+    <text x="12" y="21" font-family="'JetBrains Mono', 'SF Mono', 'Fira Code', monospace" font-size="14" fill="#00ff41" opacity="0.7">anmol@mldeep:~$</text>
+    <text x="190" y="21" font-family="'JetBrains Mono', 'SF Mono', 'Fira Code', monospace" font-size="14" fill="#00ff41">ls -la projects/</text>
+  </g>
+  <rect x="345" y="8" width="8" height="16" fill="#00ff41" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0;0.8" dur="1.2s" repeatCount="indefinite"/>
+  </rect>
+</svg>
