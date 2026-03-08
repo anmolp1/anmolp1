@@ -74,6 +74,26 @@ Built for real consulting engagements. Not toy demos.
 
 ---
 
+### `>_ learn-ai`
+
+Open-source, cohort-based bootcamp teaching professionals to integrate
+AI into real workflows. Not tutorials -- participants ship real projects.
+
+```
+tracks/
+├── data-engineering/    # 7 sessions | pipelines, IaC, agents, quality
+├── builder/             # 6 sessions | idea to deployed app with AI
+├── security/            # coming soon
+└── marketing/           # coming soon
+```
+
+Live 90-min sessions. Capstone projects on public GitHub repos.
+Open-source curriculum (CC BY-SA 4.0).
+
+`STATUS: active` | `2 tracks live` | `2 coming soon`
+
+---
+
 <img src="https://github.com/anmolp1/anmolp1/blob/main/dist/prompt-cat-stack.svg" alt="$ cat /etc/stack.conf" />
 
 ```ini
