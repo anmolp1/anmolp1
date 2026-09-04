@@ -1,175 +1,56 @@
-<p align="center">
-  <img src="https://github.com/anmolp1/anmolp1/blob/main/dist/terminal-header.svg" alt="anmol@mldeep terminal" width="800" />
-</p>
-
----
-
-<img src="https://github.com/anmolp1/anmolp1/blob/main/dist/prompt-whoami.svg" alt="$ whoami" />
-
-```yaml
-name:     Anmol Parimoo
-role:     Founder & Principal Engineer
-company:  MLDeep Systems
-focus:    AI Agent Reliability Engineering
-website:  mldeep.io
-email:    anmol@mldeep.io
-```
-
----
-
-<img src="https://github.com/anmolp1/anmolp1/blob/main/dist/prompt-cat-mission.svg" alt="$ cat mission.txt" />
-
-> I build systems that diagnose why AI agents break in production.
-> Most agents work in demos. Few survive production traffic, edge cases,
-> and the slow drift that turns a 94% accuracy system into a 71% one
-> while nobody notices. That's the problem I solve.
-
----
-
-<img src="https://github.com/anmolp1/anmolp1/blob/main/dist/prompt-ls-projects.svg" alt="$ ls -la projects/" />
-
-### `>_ agent-doctor`
-
-AI agent reliability diagnostics -- the core MLDeep offering.
-
-Diagnoses why AI agents degrade in production. Built on a taxonomy of
-7 repeating failure modes that account for most agent breakdowns:
-
-```
-MODE 01  Context Window Overflow       MODE 05  Feedback Loop Collapse
-MODE 02  Tool Selection Drift          MODE 06  Guardrail Brittleness
-MODE 03  Planning Horizon Decay        MODE 07  State Management Corruption
-MODE 04  Retrieval Quality Erosion
-```
-
-`STATUS: active development` | [`mldeep.io`](https://mldeep.io)
-
----
-
-### `>_ claude-skills`
-
-14 production Claude Code skills for B2B consulting workflows.
-
-```
-skills/
-├── consultative-selling/     # sales call prep & objection handling
-├── gtm-plan-generator/       # 90-day go-to-market plans
-├── icp-firmographics/        # ideal customer profiling
-├── proposal-writer/          # engagement proposals (.docx)
-├── partner-playbook/         # partnership strategy & co-sell
-├── engagement-manager/       # status reports & scope tracking
-├── pricing-strategist/       # value-based pricing models
-├── cash-flow-planner/        # forecasts & invoice optimization
-├── talent-planner/           # hiring & capacity planning
-├── service-productizer/      # package repeatable offerings
-├── thought-leadership/       # linkedin, case studies, talks
-├── reel-maker/               # youtube shorts & reels (mp4)
-├── ui-ux-pro-max/            # design systems & components
-└── frontend-design/          # production-grade interfaces
-```
-
-Built for real consulting engagements. Not toy demos.
-
-`STATUS: production`
-
----
-
-### `>_ learn-ai`
-
-Open-source, cohort-based bootcamp teaching professionals to integrate
-AI into real workflows. Not tutorials -- participants ship real projects.
-
-```
-tracks/
-├── data-engineering/    # 7 sessions | pipelines, IaC, agents, quality
-├── builder/             # 6 sessions | idea to deployed app with AI
-├── security/            # coming soon
-└── marketing/           # coming soon
-```
-
-Live 90-min sessions. Capstone projects on public GitHub repos.
-Open-source curriculum (CC BY-SA 4.0).
-
-`STATUS: active` | `2 tracks live` | `2 coming soon`
-
----
-
-<img src="https://github.com/anmolp1/anmolp1/blob/main/dist/prompt-cat-stack.svg" alt="$ cat /etc/stack.conf" />
-
-```ini
-[languages]
-primary   = python, typescript, javascript
-secondary = sql, bash, html/css
-
-[ai_ml]
-llm_apis   = claude, gemini
-frameworks = tensorflow, pytorch, scikit-learn
-vector_db  = faiss, chroma
-tts        = kokoro
-
-[frontend]
-frameworks = react 19, sveltekit
-styling    = tailwind css
-animation  = gsap, three.js
-
-[backend]
-api     = fastapi, flask, express
-runtime = node.js
-
-[data]
-warehouse = bigquery
-transform = dbt
-graph     = neo4j
-cache     = redis
-streaming = kafka
-analysis  = pandas
-
-[infra]
-cloud      = gcp (cloud run)
-containers = docker
-ci_cd      = github actions
-monitoring = prometheus, grafana
-
-[tools]
-media      = ffmpeg, pillow
-automation = playwright
-```
-
----
-
-<img src="https://github.com/anmolp1/anmolp1/blob/main/dist/prompt-wc.svg" alt="$ wc -l" />
-
-<p align="center">
-  <img src="https://github.com/anmolp1/anmolp1/blob/main/dist/lang-chart.svg" alt="lines of code by language" />
-</p>
-
----
-
-<img src="https://github.com/anmolp1/anmolp1/blob/main/dist/prompt-git-snake.svg" alt="$ git log --graph | snake" />
-
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/anmolp1/anmolp1/blob/main/dist/dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://github.com/anmolp1/anmolp1/blob/main/dist/dark.svg" />
-  <img alt="contribution snake" src="https://github.com/anmolp1/anmolp1/blob/main/dist/dark.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/anmolp1/anmolp1/raw/main/dist/header-dark.svg" />
+  <img alt="Anmol Parimoo — AI over BI — Founder, MLDeep Systems" src="https://github.com/anmolp1/anmolp1/raw/main/dist/header-light.svg" width="880" />
 </picture>
 
----
+Dashboards tell you what happened. That's where most companies stop — a wall of charts, a weekly meeting about them, and decisions that arrive late or never. I build the layer above: AI agents that sit on the semantic layer, watch the numbers move, trace *why*, and route the decision to a person who owns it.
 
-<img src="https://github.com/anmolp1/anmolp1/blob/main/dist/prompt-ssh-config.svg" alt="$ cat ~/.ssh/config" />
+I'm hands-on across the whole stack — from the dbt models and warehouse up through the agents — because the agents are only as good as the data foundations they stand on.
+
+## What I build
+
+### Keystone — the executive decision operating system
+
+Sits read-only above your ERP, accounting system, and CRM. Detects anomalies, traces causal chains, ranks issues by financial impact, and routes each decision to a named owner with a due date — then records whether the call actually worked. A daily brief, one focused leadership meeting a week, and a decision ledger. Deploys in weeks, not quarters.
+
+**[mldeep.io/keystone](https://mldeep.io/keystone)**
+
+### agentdx — open-source diagnostics for AI agent systems
+
+Observability tools show you what an agent did. agentdx tells you why it failed. It analyses execution traces and detects seven operational failure pathologies at the reasoning level — the failures tracing tools miss — aligned with the OWASP Agentic Top 10 and UC Berkeley's MAST framework.
 
 ```
-Host            mldeep.io
-  Website       https://mldeep.io
-  Email         anmol@mldeep.io
-  LinkedIn      linkedin.com/in/anmol01
-  GitHub        github.com/anmolp1
+pip install agentdx
 ```
 
----
+**[pypi.org/project/agentdx](https://pypi.org/project/agentdx/)**
 
-<img src="https://github.com/anmolp1/anmolp1/blob/main/dist/prompt-exit.svg" alt="$ exit" />
+### Executive command centers — bespoke engagements
 
-```
-logout
-Connection to mldeep.io closed.
-```
+A semantic layer and AI agents built on your warehouse and fine-tuned to your actual workflows and business processes. Not a chatbot bolted onto a dashboard — a system that knows your metrics' definitions, your approval chains, and your thresholds.
+
+**[mldeep.io](https://mldeep.io)**
+
+## Selected work
+
+- Designed and built a dbt + BigQuery datamart powering operational analytics for a healthcare company
+- Built IaC-managed data-lake ingestion and processing pipelines for a payments platform
+- Delivered agent-driven executive briefs over ERP and CRM data for mid-market leadership teams
+
+## Stack
+
+| Layer | Tools |
+| --- | --- |
+| Agents | Claude & Gemini APIs · MCP · agentdx · FAISS · Chroma |
+| Semantic & analytics | dbt · BigQuery · SQL · pandas |
+| Platform | GCP (Cloud Run) · Kafka · Redis · Neo4j · Docker · GitHub Actions · Prometheus/Grafana |
+| Product | Python · TypeScript · FastAPI · React 19 · SvelteKit · Tailwind |
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/anmolp1/anmolp1/raw/main/dist/lang-chart-dark.svg" />
+  <img alt="Lines of code by language" src="https://github.com/anmolp1/anmolp1/raw/main/dist/lang-chart-light.svg" />
+</picture>
+
+## Contact
+
+[mldeep.io](https://mldeep.io) · [anmol@mldeep.io](mailto:anmol@mldeep.io) · [linkedin.com/in/anmol01](https://linkedin.com/in/anmol01)

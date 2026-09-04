@@ -185,58 +185,55 @@ def format_number(n):
     return str(n)
 
 
-def generate_svg(lang_lines, output_path):
-    """Generate a horizontal bar chart SVG."""
-    # Sort by lines descending, take top 15
-    sorted_langs = sorted(lang_lines.items(), key=lambda x: x[1], reverse=True)[:15]
+CHART_PALETTES = {
+    "dark": {"ink": "#E6EDF3", "muted": "#8B949E", "track": "#21262d"},
+    "light": {"ink": "#1F2328", "muted": "#57606A", "track": "#eaeef2"},
+}
+
+FONT_STACK = "-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif"
+
+
+def generate_svg(lang_lines, output_path, palette):
+    """Generate a horizontal bar chart SVG (transparent background, one theme)."""
+    sorted_langs = sorted(lang_lines.items(), key=lambda x: x[1], reverse=True)[:12]
 
     if not sorted_langs:
         return
 
     max_lines = sorted_langs[0][1]
 
-    # Dimensions
-    bar_height = 28
-    bar_gap = 8
-    label_width = 150
+    row_height = 26
+    bar_height = 10
+    label_width = 140
     value_width = 60
-    chart_width = 400
-    padding = 20
-    total_width = label_width + chart_width + value_width + padding * 2
-    header_height = 40
-    total_height = header_height + len(sorted_langs) * (bar_height + bar_gap) + padding * 2
+    chart_width = 480
+    total_width = label_width + chart_width + value_width
+    total_height = len(sorted_langs) * row_height
 
     lines = []
-    lines.append(f'<svg xmlns="http://www.w3.org/2000/svg" width="{total_width}" height="{total_height}" viewBox="0 0 {total_width} {total_height}">')
-
-    # Background with rounded corners
-    lines.append(f'  <rect width="{total_width}" height="{total_height}" rx="12" fill="#0d1117" />')
-    lines.append(f'  <rect x="1" y="1" width="{total_width - 2}" height="{total_height - 2}" rx="11" fill="none" stroke="#30363d" stroke-width="1" />')
-
-    # Title
-    lines.append(f'  <text x="{total_width / 2}" y="{padding + 14}" fill="#e6edf3" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="14" font-weight="600" text-anchor="middle">Lines of Code by Language</text>')
-
-    y_start = header_height + padding
+    lines.append(f'<svg xmlns="http://www.w3.org/2000/svg" width="{total_width}" height="{total_height}" viewBox="0 0 {total_width} {total_height}" role="img" aria-label="Lines of code by language">')
 
     for i, (lang, loc) in enumerate(sorted_langs):
-        y = y_start + i * (bar_height + bar_gap)
+        y = i * row_height
+        bar_y = y + (row_height - bar_height) / 2
+        text_y = y + row_height / 2 + 4
         bar_w = max((loc / max_lines) * chart_width, 2)
         color = LANG_COLORS.get(lang, DEFAULT_COLOR)
         loc_str = format_number(loc)
 
         # Language label
-        lines.append(f'  <text x="{padding + label_width - 10}" y="{y + bar_height / 2 + 5}" fill="#e6edf3" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" text-anchor="end">{lang}</text>')
+        lines.append(f'  <text x="{label_width - 14}" y="{text_y}" fill="{palette["ink"]}" font-family="{FONT_STACK}" font-size="12" text-anchor="end">{lang}</text>')
 
-        # Bar background
-        lines.append(f'  <rect x="{padding + label_width}" y="{y}" width="{chart_width}" height="{bar_height}" rx="6" fill="#161b22" />')
+        # Bar track
+        lines.append(f'  <rect x="{label_width}" y="{bar_y}" width="{chart_width}" height="{bar_height}" rx="{bar_height / 2}" fill="{palette["track"]}" />')
 
         # Bar fill with animation
-        lines.append(f'  <rect x="{padding + label_width}" y="{y}" width="{bar_w:.1f}" height="{bar_height}" rx="6" fill="{color}" opacity="0.85">')
-        lines.append(f'    <animate attributeName="width" from="0" to="{bar_w:.1f}" dur="0.6s" fill="freeze" begin="{i * 0.05:.2f}s" />')
+        lines.append(f'  <rect x="{label_width}" y="{bar_y}" width="{bar_w:.1f}" height="{bar_height}" rx="{bar_height / 2}" fill="{color}">')
+        lines.append(f'    <animate attributeName="width" from="0" to="{bar_w:.1f}" dur="0.6s" fill="freeze" begin="{i * 0.05:.2f}s" calcMode="spline" keySplines="0.16 1 0.3 1" keyTimes="0;1" values="0;{bar_w:.1f}" />')
         lines.append(f'  </rect>')
 
-        # Value label
-        lines.append(f'  <text x="{padding + label_width + chart_width + 10}" y="{y + bar_height / 2 + 5}" fill="#8b949e" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11">{loc_str}</text>')
+        # Value label (tabular figures)
+        lines.append(f'  <text x="{label_width + chart_width + 12}" y="{text_y}" fill="{palette["muted"]}" font-family="{FONT_STACK}" font-size="11" font-variant-numeric="tabular-nums">{loc_str}</text>')
 
     lines.append('</svg>')
 
@@ -258,9 +255,9 @@ def main():
         if loc > 0:
             lang_lines[lang] = loc
 
-    output = os.path.join(os.path.dirname(__file__), "..", "dist", "lang-chart.svg")
-    output = os.path.normpath(output)
-    generate_svg(lang_lines, output)
+    dist = os.path.normpath(os.path.join(os.path.dirname(__file__), "..", "dist"))
+    for variant, palette in CHART_PALETTES.items():
+        generate_svg(lang_lines, os.path.join(dist, f"lang-chart-{variant}.svg"), palette)
 
 
 if __name__ == "__main__":
