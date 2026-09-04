@@ -84,14 +84,14 @@ def main():
 
     # Line 3 — affiliation
     meta_size = 15
-    meta_text = "Founder, MLDeep Systems — semantic layers & AI agents in production"
+    meta_text = "Founder, MLDeep Systems · semantic layers & AI agents in production"
     meta_d, _ = text_to_path(sans_medium, meta_text, meta_size)
     meta_baseline = mark_baseline + 32
 
     height = int(meta_baseline + 18)
 
     for variant, colors in PALETTES.items():
-        svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{WIDTH}" height="{height}" viewBox="0 0 {WIDTH} {height}" role="img" aria-label="Anmol Parimoo — AI over BI — Founder, MLDeep Systems">
+        svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{WIDTH}" height="{height}" viewBox="0 0 {WIDTH} {height}" role="img" aria-label="Anmol Parimoo, AI over BI. Founder, MLDeep Systems">
   <g transform="translate({pad_x} {name_baseline})">
     <path d="{name_d}" fill="{colors['ink']}"/>
   </g>

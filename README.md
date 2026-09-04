@@ -1,23 +1,23 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://github.com/anmolp1/anmolp1/raw/main/dist/header-dark.svg" />
-  <img alt="Anmol Parimoo — AI over BI — Founder, MLDeep Systems" src="https://github.com/anmolp1/anmolp1/raw/main/dist/header-light.svg" width="880" />
+  <img alt="Anmol Parimoo, AI over BI. Founder, MLDeep Systems" src="https://github.com/anmolp1/anmolp1/raw/main/dist/header-light.svg" width="880" />
 </picture>
 
-Dashboards tell you what happened. Most companies stop there: a wall of charts, a weekly meeting about the charts, and decisions that arrive too late. I build the layer above — AI agents that sit on the semantic layer, notice when a number moves, trace the cause, and hand the decision to a person who owns it.
+Dashboards tell you what happened. The decision about what to do next still gets made late, in a weekly meeting, by whoever happened to notice the number. I build the layer above the dashboard: AI agents on the semantic layer that trace why a metric moved and route the decision to a person who owns it.
 
-I work across the whole stack, from the dbt models and the warehouse up through the agents, because an agent is only as reliable as the data underneath it.
+I work across the whole stack, from the dbt models and the warehouse up through the agents. An agent inherits every problem in the data underneath it, so I build both.
 
 ## What I build
 
 ### Keystone
 
-Keystone is an executive decision operating system. It sits read-only above your ERP, accounting system, and CRM. It detects anomalies, traces causal chains, ranks issues by financial impact, and routes each decision to a named owner with a due date. It then records whether the call actually worked. Leadership gets a daily brief, one focused meeting a week, and a ledger of every decision. Deployment takes weeks.
+Keystone is an executive decision operating system. It sits read-only above your ERP, accounting system, and CRM. When something drifts, it traces the cause, sizes the financial impact, and routes the decision to a named owner with a due date. It also records whether the call worked. Leadership gets a daily brief, one focused meeting a week, and a ledger of every decision. Deployment takes weeks.
 
 **[mldeep.io/keystone](https://mldeep.io/keystone)**
 
 ### agentdx
 
-agentdx is an open-source diagnostic SDK for AI agent systems. Observability tools show you what an agent did; agentdx tells you why it failed. It analyses execution traces and detects seven operational failure pathologies at the reasoning level, aligned with the OWASP Agentic Top 10 and UC Berkeley's MAST framework.
+agentdx is an open-source diagnostic SDK for AI agent systems. Tracing tools show what an agent did. agentdx reads the same execution traces and identifies which of seven operational failure pathologies caused the breakdown, following the OWASP Agentic Top 10 and UC Berkeley's MAST framework.
 
 ```
 pip install agentdx
@@ -27,7 +27,7 @@ pip install agentdx
 
 ### Executive command centers
 
-I also run bespoke engagements: a semantic layer and AI agents built on your warehouse and tuned to your workflows and approval chains. When an off-the-shelf model isn't enough, I fine-tune small and large language models on your domain, so the agents use your metric definitions, your terminology, and your thresholds.
+I also take on bespoke engagements: a semantic layer and AI agents built on your warehouse and wired into your approval chains. When an off-the-shelf model isn't enough, I fine-tune small and large language models on your domain so the agents work with your metric definitions and terminology.
 
 **[mldeep.io](https://mldeep.io)**
 
