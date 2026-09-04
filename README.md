@@ -3,21 +3,21 @@
   <img alt="Anmol Parimoo — AI over BI — Founder, MLDeep Systems" src="https://github.com/anmolp1/anmolp1/raw/main/dist/header-light.svg" width="880" />
 </picture>
 
-Dashboards tell you what happened. That's where most companies stop — a wall of charts, a weekly meeting about them, and decisions that arrive late or never. I build the layer above: AI agents that sit on the semantic layer, watch the numbers move, trace *why*, and route the decision to a person who owns it.
+Dashboards tell you what happened. Most companies stop there: a wall of charts, a weekly meeting about the charts, and decisions that arrive too late. I build the layer above — AI agents that sit on the semantic layer, notice when a number moves, trace the cause, and hand the decision to a person who owns it.
 
-I'm hands-on across the whole stack — from the dbt models and warehouse up through the agents — because the agents are only as good as the data foundations they stand on.
+I work across the whole stack, from the dbt models and the warehouse up through the agents, because an agent is only as reliable as the data underneath it.
 
 ## What I build
 
-### Keystone — the executive decision operating system
+### Keystone
 
-Sits read-only above your ERP, accounting system, and CRM. Detects anomalies, traces causal chains, ranks issues by financial impact, and routes each decision to a named owner with a due date — then records whether the call actually worked. A daily brief, one focused leadership meeting a week, and a decision ledger. Deploys in weeks, not quarters.
+Keystone is an executive decision operating system. It sits read-only above your ERP, accounting system, and CRM. It detects anomalies, traces causal chains, ranks issues by financial impact, and routes each decision to a named owner with a due date. It then records whether the call actually worked. Leadership gets a daily brief, one focused meeting a week, and a ledger of every decision. Deployment takes weeks.
 
 **[mldeep.io/keystone](https://mldeep.io/keystone)**
 
-### agentdx — open-source diagnostics for AI agent systems
+### agentdx
 
-Observability tools show you what an agent did. agentdx tells you why it failed. It analyses execution traces and detects seven operational failure pathologies at the reasoning level — the failures tracing tools miss — aligned with the OWASP Agentic Top 10 and UC Berkeley's MAST framework.
+agentdx is an open-source diagnostic SDK for AI agent systems. Observability tools show you what an agent did; agentdx tells you why it failed. It analyses execution traces and detects seven operational failure pathologies at the reasoning level, aligned with the OWASP Agentic Top 10 and UC Berkeley's MAST framework.
 
 ```
 pip install agentdx
@@ -25,9 +25,9 @@ pip install agentdx
 
 **[pypi.org/project/agentdx](https://pypi.org/project/agentdx/)**
 
-### Executive command centers — bespoke engagements
+### Executive command centers
 
-A semantic layer and AI agents built on your warehouse and fine-tuned to your actual workflows and business processes. Not a chatbot bolted onto a dashboard — a system that knows your metrics' definitions, your approval chains, and your thresholds.
+I also run bespoke engagements: a semantic layer and AI agents built on your warehouse and tuned to your workflows and approval chains. When an off-the-shelf model isn't enough, I fine-tune small and large language models on your domain, so the agents use your metric definitions, your terminology, and your thresholds.
 
 **[mldeep.io](https://mldeep.io)**
 
@@ -41,7 +41,8 @@ A semantic layer and AI agents built on your warehouse and fine-tuned to your ac
 
 | Layer | Tools |
 | --- | --- |
-| Agents | Claude & Gemini APIs · MCP · agentdx · FAISS · Chroma |
+| Agents | MCP · agentdx · FAISS · Chroma |
+| Models | Claude & Gemini APIs · fine-tuned SLMs and LLMs · PyTorch |
 | Semantic & analytics | dbt · BigQuery · SQL · pandas |
 | Platform | GCP (Cloud Run) · Kafka · Redis · Neo4j · Docker · GitHub Actions · Prometheus/Grafana |
 | Product | Python · TypeScript · FastAPI · React 19 · SvelteKit · Tailwind |
